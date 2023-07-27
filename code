@@ -1,0 +1,8 @@
+import cv2
+pic1=cv2.imread("sallu.jpg")
+pic2=pic1[150:400,280:480]
+pic3=cv2.imread("aishwarya.jpg")
+pic3[100:350, 150:350]=pic2
+cv2.imshow("my photo",pic3)
+cv2.waitKey()
+cv2.destroyAllWindows()
